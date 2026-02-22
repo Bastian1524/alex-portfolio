@@ -2,13 +2,10 @@ import { useMemo, useState } from "react";
 import { content } from "./data/content";
 import "./styles.css";
 
-const GH = "https://github.com/Bastian1524";
+const BASE = import.meta.env.BASE_URL;
 
-// CV en: public/media/cv-alex-panchi.pdf
-const CV_PDF = "/media/cv-alex-panchi.pdf";
-
-// Foto opcional en: public/media/profile.jpg
-const PROFILE_PHOTO = "/media/profile.jpg";
+const CV_PDF = `${BASE}media/cv_Alex_Panchi.pdf`;
+const PROFILE_PHOTO = `${BASE}media/profile.jpg`;
 
 function Chip({ children }) {
   return <span className="chip">{children}</span>;

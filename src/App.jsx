@@ -2,9 +2,10 @@ import { useMemo, useState } from "react";
 import { content } from "./data/content";
 import "./styles.css";
 
+const GH = "https://github.com/Bastian1524";
 const BASE = import.meta.env.BASE_URL;
 
-const CV_PDF = `${BASE}media/cv_Alex_Panchi.pdf`;
+const CV_PDF = `${BASE}media/cv-alex-panchi.pdf`;
 const PROFILE_PHOTO = `${BASE}media/profile.jpg`;
 
 function Chip({ children }) {
